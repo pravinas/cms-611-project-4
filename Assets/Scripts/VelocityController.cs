@@ -27,11 +27,4 @@ public class VelocityController : MonoBehaviour {
 
 		rb.velocity = movement * speed;
 	}
-
-	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.CompareTag ("PickUp")) {
-			other.gameObject.SetActive (false);
-			transform.localScale += new Vector3 (0.1f, 0.1f, 0.1f);
-		}
-	}
 }
