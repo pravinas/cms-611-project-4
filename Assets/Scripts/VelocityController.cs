@@ -4,10 +4,12 @@ using System.Collections;
 public class VelocityController : MonoBehaviour {
 	public float speed;
 	private Rigidbody rb;
+    public GameObject player;
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody> ();
+        speed = 10f;
+		rb = player.GetComponent<Rigidbody> ();
 	}
 	
 	// Update is called once per frame
