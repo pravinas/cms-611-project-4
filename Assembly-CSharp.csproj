@@ -45,12 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LoadControlScene.cs" />
      <Compile Include="Assets\Scripts\BallController.cs" />
      <Compile Include="Assets\Scripts\BoardTiltController.cs" />
+     <Compile Include="Assets\Scripts\BoardTiltControllerAdditive.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ForceController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Spring.cs" />
+     <Compile Include="Assets\Scripts\Statics.cs" />
      <Compile Include="Assets\Scripts\VelocityController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
