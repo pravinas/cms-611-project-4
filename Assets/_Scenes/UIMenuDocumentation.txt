@@ -1,3 +1,9 @@
-This is the documentation for scene UIMenu.
+Scene: UIMenu
 
-It was created by ______, has these bugs, etc.
+Author: pravinas
+
+Description: An overlay that contains a play button and an instructions button that will load the first level.
+
+TODO:
+ - Actually make the play button work.
+ - Start writing instructions.
