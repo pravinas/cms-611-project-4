@@ -19,7 +19,7 @@ public class MouseTeleportController : MonoBehaviour {
         if (Input.GetMouseButtonDown(0)) {
             var mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            mousePos.y = 0.5f;
+            mousePos.y = player.transform.position.y;
 
             player.transform.position = mousePos;
         }
