@@ -1,0 +1,10 @@
+Scene: UIPauseScreen
+
+Author: pravinas
+
+Description: A pause screen.
+
+TODO:
+ - Restart level button
+ - Exit to main menu button
+ - Continue Button
