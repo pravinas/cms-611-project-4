@@ -1,0 +1,5 @@
+This is the documentation for scene DannyScene.
+
+It was created by ______.
+
+It is [in progress, completed, etc], has these issues, and the controls implemented in this scene are ______.

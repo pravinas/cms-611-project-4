@@ -7,7 +7,7 @@ public class Spring : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        springAmount = 100f;
+        springAmount = 500f;
 	}
 	
 	// Update is called once per frame
