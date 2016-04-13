@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4532a7500b7ab83419827164d31bf6a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: MouseForceControl
+  levelName: VelocityControl
 --- !u!4 &605541642
 Transform:
   m_ObjectHideFlags: 0
