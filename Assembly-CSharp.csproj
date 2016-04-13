@@ -45,11 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LoadControlScene.cs" />
      <Compile Include="Assets\Scripts\BallController.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\BoardTiltController.cs" />
-     <Compile Include="Assets\Scripts\ControlScripts\BoardTiltControllerAdditive.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\ForceController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\MouseAttractController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\MouseForceController.cs" />
@@ -57,17 +55,15 @@
      <Compile Include="Assets\Scripts\ControlScripts\MouseTeleportController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\MouseVelocityController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\VelocityController.cs" />
+     <Compile Include="Assets\Scripts\LoadControlScene.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\Spring.cs" />
      <Compile Include="Assets\Scripts\Statics.cs" />
-     <None Include="Assets\_Scenes\VelocityControlDocumentation.txt" />
+     <None Include="Assets\_Scenes\ControlScenes\VelocityControlDocumentation.txt" />
      <None Include="Assets\_Scenes\UIMenuDocumentation.txt" />
-     <None Include="Assets\_Scenes\AdditiveBoardTiltControlDocumentation.txt" />
-     <None Include="Assets\_Scenes\DannySceneDocumentation.txt" />
-     <None Include="Assets\_Scenes\BoardTiltControlDocumentation.txt" />
+     <None Include="Assets\_Scenes\ControlScenes\BoardTiltControlDocumentation.txt" />
      <None Include="Assets\_Scenes\BaseSceneDocumentation.txt" />
-     <None Include="Assets\_Scenes\AdditiveLoadControlTestDocumentation.txt" />
-     <None Include="Assets\_Scenes\ForceControlDocumentation.txt" />
+     <None Include="Assets\_Scenes\ControlScenes\ForceControlDocumentation.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

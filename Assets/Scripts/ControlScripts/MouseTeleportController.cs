@@ -3,11 +3,11 @@ using System.Collections;
 
 public class MouseTeleportController : MonoBehaviour {
 
-    public GameObject player;
+    private GameObject player;
 
     // Use this for initialization
     void Start () {
-
+		player = Statics.PlayerBall;
     }
 	
 	// Update is called once per frame

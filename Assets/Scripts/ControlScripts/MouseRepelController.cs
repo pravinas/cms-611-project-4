@@ -5,11 +5,12 @@ using System.Collections;
 public class MouseRepelController : MonoBehaviour
 {
     private Rigidbody rb;
-    public GameObject player;
+    private GameObject player;
 
     // Use this for initialization
     void Start()
     {
+		player = Statics.PlayerBall;
         rb = player.GetComponent<Rigidbody>();
     }
 

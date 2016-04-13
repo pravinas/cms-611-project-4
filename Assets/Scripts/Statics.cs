@@ -3,14 +3,18 @@ using System.Collections;
 
 // Declares static variables for objects
 public class Statics : MonoBehaviour {
-	public GameObject groundRef;
-	public GameObject PlayerBallRef;
 
+	// All Static Objects
 	static public GameObject board;
 	static public GameObject PlayerBall;
+
+
+	public GameObject boardRef;
+	public GameObject PlayerBallRef;
+
 	// Use this for initialization
 	void Start () {
-		board = groundRef;
+		board = boardRef;
 		PlayerBall = PlayerBallRef;
 	}
 }
