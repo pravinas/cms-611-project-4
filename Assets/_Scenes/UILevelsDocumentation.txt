@@ -1,0 +1,12 @@
+Scene: UILevels
+
+Author: pravinas
+
+Description: An overlay that has a UI for every level.
+
+TODO:
+ - Restart level button
+ - Exit to main menu button
+ - Level blurb/tooltip?
+ - Inventory bar
+ - Link to next level (invisible)
