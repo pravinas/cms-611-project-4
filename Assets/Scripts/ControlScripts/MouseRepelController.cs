@@ -21,15 +21,16 @@ public class MouseRepelController : MonoBehaviour
 
     // FixedUpdate is called before performing 
     // physics calculations.
-    void FixedUpdate()
-    {
-        if (Input.GetMouseButton(0))
-        {
+    void FixedUpdate() {
+        if (Input.GetMouseButton(0)) {
             var mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            mousePos.y = 0;
 
-            rb.velocity = mousePos * -1;
+            var moveBy = mousePos - player.transform.position;
+            moveBy.y = 0;
+
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.velocity = moveBy * -1;
         }
     }
 }
