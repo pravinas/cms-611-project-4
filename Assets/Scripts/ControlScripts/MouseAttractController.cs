@@ -25,9 +25,12 @@ public class MouseAttractController : MonoBehaviour
         if (Input.GetMouseButton(0)) {
             var mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-            mousePos.y = 0;
 
-            rb.velocity = mousePos;
+            var moveBy = mousePos - player.transform.position;
+            moveBy.y = 0;
+
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.velocity = moveBy;
         }
     }
 }
