@@ -12,7 +12,7 @@ public class MouseForceController : MonoBehaviour
     void Start()
     {
 		player = Statics.PlayerBall;
-        speed = 10f;
+        speed = 100f;
         rb = player.GetComponent<Rigidbody>();
     }
 

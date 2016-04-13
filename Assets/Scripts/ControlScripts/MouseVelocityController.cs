@@ -10,7 +10,7 @@ public class MouseVelocityController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        speed = 10f;
+        speed = 100f;
         rb = Statics.PlayerBall.GetComponent<Rigidbody>();
     }
 
