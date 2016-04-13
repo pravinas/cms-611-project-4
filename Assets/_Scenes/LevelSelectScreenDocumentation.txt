@@ -1,0 +1,11 @@
+Scene: LevelSelectScreen
+
+Author: --
+
+Description: A screen that allows the player to select levels.
+
+TODO:
+ - Grid with numbered levels
+ - Mouse overs reveal blurbs with Level Title and Description
+ - Locked Icon for levels that have not been reached
+ - Return to Main Menu Button
