@@ -1,5 +1,5 @@
-Library/*
-Library/
+/Library/*
+/Library/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -25,3 +25,7 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+# Other files that keep popping up
+Assembly-CSharp.csproj
+ProjectSettings/ProjectSettings.asset
