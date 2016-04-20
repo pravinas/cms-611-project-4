@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// TODO: Change to board tilt implementation to only rotate the board and not add velocity.
+// TODO: Change board tilt implementation to only rotate the board and not add velocity.
 public class BoardTiltController : MonoBehaviour {
 	public float speed;
 	private Rigidbody boardRigidbody;
