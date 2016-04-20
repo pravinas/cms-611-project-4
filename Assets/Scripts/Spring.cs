@@ -16,7 +16,6 @@ public class Spring : MonoBehaviour {
 	}
 
     void OnCollisionEnter(Collision collision) {
-
         Rigidbody playerRB = collision.gameObject.GetComponent<Rigidbody>();
 
         Vector3 movement = new Vector3(0, springAmount, 0);

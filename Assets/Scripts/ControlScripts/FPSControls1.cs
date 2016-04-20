@@ -6,14 +6,17 @@ public class FPSControls1 : MonoBehaviour {
 	public float speed;
 	public float turnSpeed;
 
+	public GameObject camera;
+
 	private Rigidbody rb;
-	public GameObject player;
-    public GameObject camera;
+	private GameObject player;
 
 	// Use this for initialization
 	void Start () {
 		speed = 10f;
 		turnSpeed = 200f;
+		player = Statics.PlayerBall;
+
 		rb = player.GetComponent<Rigidbody> ();
 	}
 
@@ -42,8 +45,6 @@ public class FPSControls1 : MonoBehaviour {
 			rb.transform.position -= camera.transform.forward * speed * Time.deltaTime;
 			//rb.AddForce (camera.transform.forward * speed);
 		}
-
-		Debug.Log ("rb.vel: " + rb.velocity); //Debug
 			
 	}
 
