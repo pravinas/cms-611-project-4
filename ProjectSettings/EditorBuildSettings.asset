@@ -33,3 +33,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/ControlScenes/ReversedForceControl.unity
   - enabled: 1
     path: Assets/_Scenes/ControlScenes/AlternatingForceControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/BuddyRepelControl.unity
