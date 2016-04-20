@@ -6,13 +6,12 @@ public class MouseVelocityController : MonoBehaviour
 {
     public float speed;
     private Rigidbody rb;
-    public GameObject player;
 
     // Use this for initialization
     void Start()
     {
-        speed = 10f;
-        rb = player.GetComponent<Rigidbody>();
+        speed = 100f;
+        rb = Statics.PlayerBall.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame

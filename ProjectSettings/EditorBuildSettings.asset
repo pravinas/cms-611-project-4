@@ -5,5 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/AdditiveBoardTiltControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/ForceControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/BoardTiltControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/VelocityControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/MouseVelocityControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/MouseTeleportControl.unity
+  - enabled: 0
+    path: Assets/Scripts/ControlScripts/MouseRepelControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/MouseAttractControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/MouseForceControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/MouseRepelControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/UserInputControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/DelayForceControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/ReversedForceControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/AlternatingForceControl.unity
