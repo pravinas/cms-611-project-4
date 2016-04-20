@@ -37,6 +37,6 @@ public class FPSControls1 : MonoBehaviour {
 
 		rb.velocity = movement * speed;
 
-		player.transform.position = ;
+		//player.transform.position = ;
 	}
 }

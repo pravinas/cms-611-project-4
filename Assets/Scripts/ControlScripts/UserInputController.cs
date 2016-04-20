@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class UserInputController : MonoBehaviour
 {
@@ -8,17 +9,13 @@ public class UserInputController : MonoBehaviour
     private int keyCount;
     private Rigidbody rb;
     private GameObject player;
-    private KeyCode up;
-    private KeyCode down;
-    private KeyCode left;
-    private KeyCode right;
-
+    private List<KeyCode> inputs = new List<KeyCode>();
 
     // Use this for initialization
     void Start()
     {
         player = Statics.PlayerBall;
-        speed = 100f;
+        speed = 10f;
         rb = player.GetComponent<Rigidbody>();
         keyCount = 0;
     }
@@ -34,30 +31,29 @@ public class UserInputController : MonoBehaviour
     void FixedUpdate() {
         if (keyCount < 4) {
             foreach (KeyCode vKey in System.Enum.GetValues(typeof(KeyCode))) {
-                if (Input.GetKeyDown (vKey)) {
-                    if (keyCount == 0) {
-                        up = vKey;
-                    } else if (keyCount == 1) {
-                        down = vKey;
-                    } else if (keyCount == 2) {
-                        left = vKey;
-                    } else if (keyCount == 3) {
-                        right = vKey;
+                if (Input.GetKeyDown(vKey) && inputs.Contains(vKey) == false) {
+                    if (inputs.Count == 0) {
+                        inputs.Add(vKey);
+                    } else if (inputs.Count == 1) {
+                        inputs.Add(vKey);
+                    } else if (inputs.Count == 2 ) {
+                        inputs.Add(vKey);
+                    } else if (inputs.Count == 3) {
+                        inputs.Add(vKey);
                     }
                     keyCount += 1;
                 }
             }
         } else {
-            if (Input.GetKey (up)) {
+            if (Input.GetKey (inputs[0])) {
                 rb.AddForce(new Vector3(0, 0, 1) * speed);
-            } else if (Input.GetKey (down)) {
+            } else if (Input.GetKey (inputs[1])) {
                 rb.AddForce(new Vector3(0, 0, -1) * speed);
             }
 
-            if (Input.GetKey (left)) {
+            if (Input.GetKey (inputs[2])) {
                 rb.AddForce(new Vector3(-1, 0, 0) * speed);
-            }
-            else if (Input.GetKey (right)) {
+            } else if (Input.GetKey (inputs[3])) {
                 rb.AddForce(new Vector3(1, 0, 0) * speed);
             }
         }

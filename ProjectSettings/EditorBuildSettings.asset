@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/ControlScenes/MouseRepelControl.unity
   - enabled: 1
     path: Assets/_Scenes/ControlScenes/UserInputControl.unity
+  - enabled: 1
+    path: Assets/_Scenes/ControlScenes/DelayForceControl.unity
