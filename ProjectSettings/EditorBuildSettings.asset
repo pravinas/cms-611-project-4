@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/AdditiveBoardTiltControl.unity
   - enabled: 1
+    path: Assets/_Scenes/BaseScene.unity
+  - enabled: 1
+    path: Assets/_Scenes/UIMenu.unity
+  - enabled: 1
+    path: Assets/_Scenes/LevelSelectScreen.unity
+  - enabled: 1
     path: Assets/_Scenes/ControlScenes/ForceControl.unity
   - enabled: 1
     path: Assets/_Scenes/ControlScenes/BoardTiltControl.unity
@@ -34,4 +40,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/ControlScenes/AlternatingForceControl.unity
   - enabled: 1
-    path: Assets/_Scenes/ControlScenes/BuddyRepelControl.unity
+    path: Assets/_Scenes/ControlScenes/FPSControl1.unity

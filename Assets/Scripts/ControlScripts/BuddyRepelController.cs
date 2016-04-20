@@ -4,7 +4,6 @@ using System.Collections;
 
 public class BuddyRepelController : MonoBehaviour
 {
-    private Rigidbody rb;
     private GameObject player;
 
     public GameObject buddy;
@@ -19,7 +18,6 @@ public class BuddyRepelController : MonoBehaviour
     void Start()
     {
         player = Statics.PlayerBall;
-        rb = player.GetComponent<Rigidbody>();
         controlledBuddy = (GameObject) Instantiate(buddy, player.transform.position, Quaternion.identity);
         buddyRB = controlledBuddy.GetComponent<Rigidbody>();
         speed = 13f;
