@@ -645,4 +645,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad0328da438fb4583bbabfb5e87e3fc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: ForceControl
+  level: VelocityControl
