@@ -813,7 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757ff29c7489bde4e9f5b26d069ee972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundRef: {fileID: 1829825630}
+  boardRef: {fileID: 0}
   PlayerBallRef: {fileID: 442251741}
 --- !u!4 &1474826193
 Transform:
@@ -871,11 +871,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1607243649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e698edadf2a5b642ae266c70f731a8b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f32b7a04487b4f2e821434fa03533ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 0
+  turnSpeed: 0
   player: {fileID: 442251741}
+  camera: {fileID: 927426901}
 --- !u!1001 &1618814677
 Prefab:
   m_ObjectHideFlags: 0
