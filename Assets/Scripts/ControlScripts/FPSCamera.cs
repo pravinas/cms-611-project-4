@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FPSCamera : MonoBehaviour {
 
-	public GameObject player;
+	private GameObject player;
 
 	private Vector3 offset;
 
@@ -11,6 +11,8 @@ public class FPSCamera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		player = Statics.PlayerBall;
+		transform.position = player.transform.position;
 		offset = transform.position - player.transform.position;
 	}
 
