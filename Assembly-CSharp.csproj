@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\AlternatingForceController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\BoardTiltController.cs" />
+     <Compile Include="Assets\Scripts\ControlScripts\BuddyRepelController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\DelayForceController.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\FPSCamera.cs" />
      <Compile Include="Assets\Scripts\ControlScripts\FPSControls1.cs" />

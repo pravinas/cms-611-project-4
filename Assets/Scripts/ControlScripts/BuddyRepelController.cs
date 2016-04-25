@@ -50,8 +50,6 @@ public class BuddyRepelController : MonoBehaviour
                 var distanceBetween = buddyPos - detectedPlayer.transform.position;
                 var euclideanDistance = Math.Abs(Vector3.Distance(buddyPos, detectedPlayer.transform.position));
 
-                Debug.Log(euclideanDistance);
-
                 var kick = (5.5f - euclideanDistance) * 3f;
              
                 /*
