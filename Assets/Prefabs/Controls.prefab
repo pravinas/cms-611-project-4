@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464998}
-  - 114: {fileID: 11466510}
+  - 114: {fileID: 11452636}
   m_Layer: 0
   m_Name: Controls
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11466510
+--- !u!114 &11452636
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -36,9 +36,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 191786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 0be6d72eef4c15f40858a6e7352ba6b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buddy: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
