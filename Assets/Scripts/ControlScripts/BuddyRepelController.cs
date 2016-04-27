@@ -37,38 +37,33 @@ public class BuddyRepelController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
 
-        buddyRB.velocity = movement * speed;
+        if (buddyRB)
+        {
+            buddyRB.velocity = movement * speed;
+        }
 
-        Collider[] surroundingColliders = Physics.OverlapSphere(controlledBuddy.transform.position, effectRadius);
+        if (controlledBuddy)
+        {
+            Collider[] surroundingColliders = Physics.OverlapSphere(controlledBuddy.transform.position, effectRadius);
 
-        foreach (var col in surroundingColliders) {
-            if (col.tag.Equals("Player")) {
-                GameObject detectedPlayer = col.gameObject;
-                Rigidbody detectedRB = detectedPlayer.GetComponent<Rigidbody>();
-                
-                var buddyPos = controlledBuddy.transform.position;
-                var distanceBetween = buddyPos - detectedPlayer.transform.position;
-                var euclideanDistance = Math.Abs(Vector3.Distance(buddyPos, detectedPlayer.transform.position));
+            foreach (var col in surroundingColliders)
+            {
+                if (col.tag.Equals("Player"))
+                {
+                    GameObject detectedPlayer = col.gameObject;
+                    Rigidbody detectedRB = detectedPlayer.GetComponent<Rigidbody>();
 
-                var kick = (5.5f - euclideanDistance) * 3f;
-             
-                /*
-                var newX = moveBy.x;
-                var newZ = moveBy.z;
+                    var buddyPos = controlledBuddy.transform.position;
+                    var distanceBetween = buddyPos - detectedPlayer.transform.position;
+                    var euclideanDistance = Math.Abs(Vector3.Distance(buddyPos, detectedPlayer.transform.position));
 
-                if (newX != 0f) {
-                    newX = Math.Min(5f, 1f / newX);
+                    var kick = (5.5f - euclideanDistance) * 3f;
+
+                    Vector3 moveBy = new Vector3(distanceBetween.x, 0f, distanceBetween.z);
+
+                    detectedRB.velocity = new Vector3(0, 0, 0);
+                    detectedRB.velocity = moveBy * -1 * kick;
                 }
-
-                if (newZ != 0f) {
-                    newZ = Math.Min(5f, 1f / newZ);
-                }
-                */
-                
-                Vector3 moveBy = new Vector3(distanceBetween.x, 0f, distanceBetween.z);
-
-                detectedRB.velocity = new Vector3(0, 0, 0);
-                detectedRB.velocity = moveBy * -1 * kick;
             }
         }
     }
