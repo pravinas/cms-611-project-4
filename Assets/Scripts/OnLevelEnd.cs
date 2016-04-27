@@ -17,5 +17,7 @@ public class OnLevelEnd : MonoBehaviour {
 	{
 		//TODO: Implement what happens on the end of the level
 		Debug.Log("Goal Reached");
+		PauseManager.setPauseType ("gamePause");
+		Application.LoadLevelAdditive ("UIScreenOverlay");
 	}
 }

@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LoadControlScene : MonoBehaviour {
+public class LoadScene : MonoBehaviour {
 	public string levelName;
-    
+
 	// Use this for initialization
 	void Start () {
-		Application.LoadLevelAdditive (levelName);
+		Application.LoadLevel (levelName);
 	}
 	
 	// Update is called once per frame
