@@ -124,7 +124,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11452636, guid: 2e845a825578eb042879e5617dfbb6ce, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2e845a825578eb042879e5617dfbb6ce, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1224454217 stripped
@@ -143,4 +144,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  player: {fileID: 0}
