@@ -16,7 +16,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/UIScreenOverlay.unity
   - enabled: 1
-    path: Assets/_Scenes/UIHUD.unity
+    path: Assets/_Scenes/UIHUD2.unity
   - enabled: 1
     path: Assets/_Scenes/ControlScenes/ForceControl.unity
   - enabled: 1
