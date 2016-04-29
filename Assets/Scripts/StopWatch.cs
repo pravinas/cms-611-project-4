@@ -20,9 +20,6 @@ public class StopWatch : MonoBehaviour
         int minutes =  (int) currentTime / 60;
         int seconds = (int) currentTime % 60;
 
-        Debug.Log("minutes:" + minutes);
-        Debug.Log("seconds: " + seconds);
-
         string timeElapsed = string.Format("{0:00}:{1:00}", minutes, seconds);
 
         timer.text = timeElapsed;
