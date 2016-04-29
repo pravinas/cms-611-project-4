@@ -35,17 +35,28 @@ public class FPSControls1 : MonoBehaviour {
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			//rb.position = new Vector3(0, 0, rb.position.z + (transform.forward * speed * Time.deltaTime).z);
 			//rb.velocity = camera.transform.forward * speed;
-			rb.transform.position += camera.transform.forward * speed * Time.deltaTime;
+			//rb.transform.position += rb.transform.forward * speed * Time.deltaTime;
+			rb.velocity += camera.transform.forward * speed * Time.deltaTime;
+
+			Debug.Log ("camera: " + camera.transform.forward);
+			Debug.Log ("self rb: " + rb.transform.forward);
+			Debug.Log ("self player: " + player.transform.forward);
 			//rb.AddForce (-camera.transform.forward * speed);
 		}
 
 		if (Input.GetKey (KeyCode.DownArrow)) {
 			//rb.position = new Vector3(0, 0, rb.position.z + (transform.forward * speed * Time.deltaTime).z);
 			//rb.velocity = - camera.transform.forward * speed;
-			rb.transform.position -= camera.transform.forward * speed * Time.deltaTime;
+			//rb.transform.position -= rb.transform.forward * speed * Time.deltaTime;
+			rb.velocity -= camera.transform.forward * speed * Time.deltaTime;
+			Debug.Log ("camera: " + camera.transform.forward);
+			Debug.Log ("self rb: " + rb.transform.forward);
+			Debug.Log ("self player: " + player.transform.forward);
 			//rb.AddForce (camera.transform.forward * speed);
 		}
-			
+		if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.UpArrow)) {
+			rb.velocity = new Vector3 (0, 0, 0);
+		}
 	}
 
 	// FixedUpdate is called before performing 
