@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// TODO: Change board tilt implementation to only rotate the board and not add velocity.
 public class BoardTiltController : MonoBehaviour {
 	public float speed;
 	private GameObject board;
@@ -29,10 +28,10 @@ public class BoardTiltController : MonoBehaviour {
 		if (Input.GetKey("right"))
 			boardTransform.Rotate(-Vector3.forward * speed * Time.deltaTime, Space.World);
 
-		if (Input.GetKey("up"))
+		if (Input.GetKey("down"))
 			boardTransform.Rotate(Vector3.left * speed * Time.deltaTime,Space.World);
 
-		if (Input.GetKey("down"))
+		if (Input.GetKey("up"))
 			boardTransform.Rotate(Vector3.right * speed * Time.deltaTime, Space.World);
 	}
 }
