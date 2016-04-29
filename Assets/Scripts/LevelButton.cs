@@ -9,6 +9,7 @@ public class LevelButton : MonoBehaviour {
 	public void loadLevel(){
 		Application.LoadLevel (baseScene);
 		Application.LoadLevelAdditive (level);
+        Application.LoadLevelAdditive("UIHUD");
 	}
 
 	public void loadBaseScene(){
@@ -27,4 +28,12 @@ public class LevelButton : MonoBehaviour {
 		Debug.Log ("Now unloading self");
 		LoadManager.UnloadSelf ();
 	}
+
+    public void exitToMenu()
+    {
+        Application.LoadLevel(baseScene);
+        Application.LoadLevelAdditive(level);
+    }
+
+
 }
