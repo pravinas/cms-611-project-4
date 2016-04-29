@@ -14,4 +14,8 @@ public class LevelButton : MonoBehaviour {
 	public void loadLevelAdditive(){
 		Application.LoadLevelAdditive (level);
 	}
+
+	public void loadLevelAdditive(string sceneName){
+		Application.LoadLevelAdditive (sceneName);
+	}
 }
