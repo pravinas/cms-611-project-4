@@ -22,16 +22,19 @@ public class Statics : MonoBehaviour {
 		board = boardRef;
 		PlayerBall = PlayerBallRef;
 		mainCamera = cameraRef;
-		currentLevel = 0;
-		latestUnlockedLevel = 0;
 		// TODO: Update this to be accurate - Handle what happens when reach max levels
-		levels = new string[7];
-		levels[0] ="VelocityControl";
-		levels[1] = "ForceControl";
+		levels = new string[12];
+		levels[0] = "ForceControl";
+		levels[1] = "VelocityControl";
 		levels[2] = "MouseAttractControl";
 		levels[3] = "MouseRepelControl";
 		levels[4] = "MouseTeleportControl";
 		levels[5] = "ReversedForceControl";
-		levels[6] = "BoardTiltControl";
-	}
+		levels[6] = "AlternatingForceControl";
+        levels[7] = "DelayForceControl";
+        levels[8] = "BoardTiltControl";
+        levels[9] = "UserInputControl";
+        levels[10] = "BuddyRepelControl";
+        levels[11] = "FPSControl1";
+    }
 }
