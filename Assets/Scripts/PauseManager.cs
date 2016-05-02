@@ -24,7 +24,6 @@ public class PauseManager : MonoBehaviour {
 
     public void resumeTime()
     {
-        Debug.Log("Hello");
         Time.timeScale = 1.0f;
     }
 
