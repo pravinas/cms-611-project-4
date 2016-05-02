@@ -12,6 +12,29 @@ public class LevelButton : MonoBehaviour {
         Application.LoadLevelAdditive("UIHUD");
 	}
 
+	public void loadNextLevel(){
+		Application.LoadLevel (baseScene);
+		//TODO: If hit max level, handle properly
+		if (Statics.currentLevel < Statics.levels.Length) {
+			Statics.currentLevel += 1;
+			if (Statics.latestUnlockedLevel < Statics.currentLevel)
+				Statics.latestUnlockedLevel = Statics.currentLevel;
+		}
+		else
+			Statics.currentLevel = 0;
+		Application.LoadLevelAdditive (Statics.levels[Statics.currentLevel]);
+		Application.LoadLevelAdditive("UIHUD");
+	}
+
+	public void reloadLevel()
+	{
+		LoadManager.UnloadSelf ();
+		Application.LoadLevel (baseScene);
+		Application.LoadLevelAdditive (Statics.levels[Statics.currentLevel]);
+		Application.LoadLevelAdditive("UIHUD");
+	}
+
+
 	public void loadBaseScene(){
 		Application.LoadLevel (baseScene);
 	}

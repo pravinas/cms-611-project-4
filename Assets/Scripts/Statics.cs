@@ -8,7 +8,10 @@ public class Statics : MonoBehaviour {
 	static public GameObject board;
 	static public GameObject PlayerBall;
 	static public GameObject mainCamera;
-
+	// TODO: Move this to its own file
+	static public string[] levels;
+	static public int currentLevel;
+	static public int latestUnlockedLevel;
 
 	public GameObject boardRef;
 	public GameObject PlayerBallRef;
@@ -19,5 +22,16 @@ public class Statics : MonoBehaviour {
 		board = boardRef;
 		PlayerBall = PlayerBallRef;
 		mainCamera = cameraRef;
+		currentLevel = 0;
+		latestUnlockedLevel = 0;
+		// TODO: Update this to be accurate - Handle what happens when reach max levels
+		levels = new string[7];
+		levels[0] ="VelocityControl";
+		levels[1] = "ForceControl";
+		levels[2] = "MouseAttractControl";
+		levels[3] = "MouseRepelControl";
+		levels[4] = "MouseTeleportControl";
+		levels[5] = "ReversedForceControl";
+		levels[6] = "BoardTiltControl";
 	}
 }
