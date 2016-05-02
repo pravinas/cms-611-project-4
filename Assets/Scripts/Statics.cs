@@ -22,8 +22,6 @@ public class Statics : MonoBehaviour {
 		board = boardRef;
 		PlayerBall = PlayerBallRef;
 		mainCamera = cameraRef;
-		currentLevel = 0;
-		latestUnlockedLevel = 0;
 		// TODO: Update this to be accurate - Handle what happens when reach max levels
 		levels = new string[7];
 		levels[0] ="VelocityControl";
