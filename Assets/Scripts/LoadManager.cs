@@ -11,7 +11,11 @@ public class LoadManager : MonoBehaviour {
 		if (PauseManager.getPauseType () == "gamePause") {
 			selfScene = "UIScreenOverlay";
 			childScene = "UIPauseButtons";
-		}
+		} else if (PauseManager.getPauseType() == "levelEnd")
+        {
+            selfScene = "UIScreenOverlay";
+            childScene = "UILevelCompleteButtons";
+        }
 		Debug.Log ("PAUSE TYPE: " + PauseManager.getPauseType ());
 		Application.LoadLevelAdditive (childScene);
 	}

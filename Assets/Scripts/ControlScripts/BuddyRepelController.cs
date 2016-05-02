@@ -16,7 +16,7 @@ public class BuddyRepelController : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
+    { 
         player = Statics.PlayerBall;
         controlledBuddy = (GameObject) Instantiate(buddy, player.transform.position, Quaternion.identity);
         buddyRB = controlledBuddy.GetComponent<Rigidbody>();

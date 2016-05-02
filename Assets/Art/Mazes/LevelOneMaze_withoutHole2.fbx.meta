@@ -1,15 +1,36 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 62343ef353da1dc4c9959e3518e4dd5c
-timeCreated: 1462217521
-=======
-guid: 3b3d8477df2bd16408ee50a61f03a8e3
-timeCreated: 1462214676
->>>>>>> 6e69d01045089dcc532a6934596cd3a2ac8cee0c
+guid: d00e1c0ab649f704dba75f50d15bf047
+timeCreated: 1462217529
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Plane_MeshPart0
+    100004: Plane_MeshPart1
+    100006: Plane_MeshPart2
+    100008: Plane_MeshPart3
+    400000: //RootNode
+    400002: Plane_MeshPart0
+    400004: Plane_MeshPart1
+    400006: Plane_MeshPart2
+    400008: Plane_MeshPart3
+    2300000: Plane_MeshPart0
+    2300002: Plane_MeshPart1
+    2300004: Plane_MeshPart2
+    2300006: Plane_MeshPart3
+    3300000: Plane_MeshPart0
+    3300002: Plane_MeshPart1
+    3300004: Plane_MeshPart2
+    3300006: Plane_MeshPart3
+    4300000: Plane_MeshPart0
+    4300002: Plane_MeshPart1
+    4300004: Plane_MeshPart2
+    4300006: Plane_MeshPart3
+    6400000: Plane_MeshPart0
+    6400002: Plane_MeshPart1
+    6400004: Plane_MeshPart2
+    6400006: Plane_MeshPart3
   materials:
     importMaterials: 1
     materialName: 0
@@ -36,7 +57,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -68,7 +89,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
