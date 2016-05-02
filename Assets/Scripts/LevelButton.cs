@@ -58,5 +58,11 @@ public class LevelButton : MonoBehaviour {
         Application.LoadLevelAdditive(level);
     }
 
+    public void loadLevelSelect()
+    {
+        Application.LoadLevel(baseScene);
+        Application.LoadLevelAdditive(level);
+    }
+
 
 }
