@@ -13,19 +13,18 @@ public class LevelButton : MonoBehaviour {
         Time.timeScale = 1.0f;
 	}
 
-	public void loadLevelNumber(int i)
-	{
-		Application.LoadLevel (baseScene);
-		Statics.currentLevel = i;
-		Application.LoadLevelAdditive (Statics.levels[i]);
-		Application.LoadLevelAdditive("UIHUD");
-	}
-	public void loadNextLevel(){
+    public void loadLevel(int i)
+    {
+        Application.LoadLevel(baseScene);
+        Application.LoadLevelAdditive(Statics.levels[i]);
+        Application.LoadLevelAdditive("UIHUD");
+        Time.timeScale = 1.0f;
+    }
+    public void loadNextLevel(){
 		Application.LoadLevel (baseScene);
 		//TODO: If hit max level, handle properly
 		if (Statics.currentLevel < Statics.levels.Length) {
 			Statics.currentLevel += 1;
-			Debug.Log ("CurrentLevel " + Statics.currentLevel);
 			if (Statics.latestUnlockedLevel < Statics.currentLevel)
 				Statics.latestUnlockedLevel = Statics.currentLevel;
 		}

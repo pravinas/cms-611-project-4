@@ -729,7 +729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1329373501}
-        m_MethodName: loadLevelNumber
+        m_MethodName: loadLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
