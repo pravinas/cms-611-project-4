@@ -5,7 +5,7 @@ public class StartLoad : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Application.LoadLevelAdditive("BaseScene");
+        Application.LoadLevel("BaseScene");
         Application.LoadLevelAdditive("UIMenu");
     }
 	

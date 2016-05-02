@@ -10,6 +10,7 @@ public class LevelButton : MonoBehaviour {
 		Application.LoadLevel (baseScene);
 		Application.LoadLevelAdditive (level);
         Application.LoadLevelAdditive("UIHUD");
+        Time.timeScale = 1.0f;
 	}
 
 	public void loadNextLevel(){
