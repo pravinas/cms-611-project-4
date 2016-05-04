@@ -10,7 +10,10 @@ public class StartSpawn : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate () {
+        if (ball.transform.position.y <= -20)
+        {
+            ball.transform.position = this.transform.position;
+        }
 	}
 }
