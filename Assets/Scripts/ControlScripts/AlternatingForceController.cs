@@ -12,6 +12,7 @@ public class AlternatingForceController : MonoBehaviour
     {
         speed = 10f;
         rb = Statics.PlayerBall.GetComponent<Rigidbody>();
+        Statics.levelDescription = "Split personalities";
     }
 
     // Update is called once per frame

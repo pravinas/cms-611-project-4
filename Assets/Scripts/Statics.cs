@@ -18,6 +18,7 @@ public class Statics : MonoBehaviour {
 	public GameObject cameraRef;
 
     static public string timeElapsed;
+    static public string levelDescription;
 
 	// Use this for initialization
 	void Start () {

@@ -10,6 +10,7 @@ public class ReversedForceController : MonoBehaviour
     {
         speed = 10f;
         rb = Statics.PlayerBall.GetComponent<Rigidbody>();
+        Statics.levelDescription = "It's opposite day";
     }
 
     // Update is called once per frame

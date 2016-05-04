@@ -8,6 +8,7 @@ public class ForceController : MonoBehaviour {
 	void Start () {
         speed = 10f;
 		rb = Statics.PlayerBall.GetComponent<Rigidbody> ();
+        Statics.levelDescription = "May the force be with you";
 	}
 	
 	// Update is called once per frame

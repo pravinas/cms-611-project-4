@@ -13,6 +13,7 @@ public class DelayForceController : MonoBehaviour
         speed = 10f;
         rb = Statics.PlayerBall.GetComponent<Rigidbody>();
         delay = 1;
+        Statics.levelDescription = "MIT WiFi";
     }
 
     // Update is called once per frame

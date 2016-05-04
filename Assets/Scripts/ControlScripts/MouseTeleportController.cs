@@ -8,6 +8,7 @@ public class MouseTeleportController : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		player = Statics.PlayerBall;
+        Statics.levelDescription = "You can be anywhere you want to be";
     }
 	
 	// Update is called once per frame
