@@ -19,6 +19,7 @@ PR1:
  - Better lighting.
  - Sound effects for clicking on buttons.
  - display time at the end of the level.
+ - Last level doesn't end game.
 
 PR9999:
  - Text indicating what each level does.
