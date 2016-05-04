@@ -17,6 +17,9 @@ PR0:
 
 PR1:
  - Better lighting.
+ - Sound effects for clicking on buttons.
+ - display time at the end of the level.
 
 PR9999:
  - Text indicating what each level does.
+ - Background music.
