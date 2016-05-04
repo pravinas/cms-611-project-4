@@ -1,0 +1,22 @@
+Bugs:
+
+DNF:
+ - 
+
+WNF:
+ - Board clipping through camera.
+
+DNI:
+ - Add 2nd or 3rd Maze (if not trivial)
+ - Untested control schemes.
+
+PR0:
+ - More sprites for the ball.
+ - Add 2nd or 3rd Maze
+ - Buttons doing something when hovered over.
+
+PR1:
+ - Better lighting.
+
+PR9999:
+ - Text indicating what each level does.
