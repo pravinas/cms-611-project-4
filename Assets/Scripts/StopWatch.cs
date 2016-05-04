@@ -20,9 +20,9 @@ public class StopWatch : MonoBehaviour
         int minutes =  (int) currentTime / 60;
         int seconds = (int) currentTime % 60;
 
-        string timeElapsed = string.Format("{0:00}:{1:00}", minutes, seconds);
+        Statics.timeElapsed = string.Format("{0:00}:{1:00}", minutes, seconds);
 
-        timer.text = timeElapsed;
+        timer.text = Statics.timeElapsed;
 
         //gs.fontSize = 24;
         //gs.normal.textColor = Color.white;
