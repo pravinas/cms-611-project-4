@@ -460,6 +460,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c449e0c769f27824e9876ef39df331e8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &939983509 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 180392, guid: c449e0c769f27824e9876ef39df331e8, type: 2}
+  m_PrefabInternal: {fileID: 939983508}
 --- !u!1 &1133190143
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757ff29c7489bde4e9f5b26d069ee972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boardRef: {fileID: 0}
+  boardRef: {fileID: 939983509}
   PlayerBallRef: {fileID: 2051102554}
   cameraRef: {fileID: 927426901}
 --- !u!4 &1474826193
