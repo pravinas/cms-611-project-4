@@ -22,6 +22,7 @@ public class BuddyRepelController : MonoBehaviour
         buddyRB = controlledBuddy.GetComponent<Rigidbody>();
         speed = 13f;
         effectRadius = 5f;
+        Statics.levelDescription = "You looked lonely, so I've brought you a friend";
     }
 
     // Update is called once per frame
@@ -57,7 +58,9 @@ public class BuddyRepelController : MonoBehaviour
                     var distanceBetween = buddyPos - detectedPlayer.transform.position;
                     var euclideanDistance = Math.Abs(Vector3.Distance(buddyPos, detectedPlayer.transform.position));
 
-                    var kick = (5.5f - euclideanDistance) * 3f;
+                    Debug.Log(euclideanDistance);
+
+                    var kick = (6.0f - euclideanDistance) * 5f;
 
                     Vector3 moveBy = new Vector3(distanceBetween.x, 0f, distanceBetween.z);
 

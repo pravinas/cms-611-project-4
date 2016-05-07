@@ -12,6 +12,7 @@ public class MouseAttractController : MonoBehaviour
     {
 		player = Statics.PlayerBall;
         rb = player.GetComponent<Rigidbody>();
+        Statics.levelDescription = "Something different";
     }
 
     // Update is called once per frame

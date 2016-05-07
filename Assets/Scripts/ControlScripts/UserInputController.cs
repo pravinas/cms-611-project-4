@@ -18,6 +18,7 @@ public class UserInputController : MonoBehaviour
         speed = 10f;
         rb = player.GetComponent<Rigidbody>();
         keyCount = 0;
+        Statics.levelDescription = "Pick your poison";
     }
 
     // Update is called once per frame

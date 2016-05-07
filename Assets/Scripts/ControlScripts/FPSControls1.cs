@@ -18,7 +18,8 @@ public class FPSControls1 : MonoBehaviour {
 		player = Statics.PlayerBall;
 
 		rb = player.GetComponent<Rigidbody> ();
-	}
+        Statics.levelDescription = "A whole new world";
+    }
 
 	// Update is called once per frame
 	void Update () {
