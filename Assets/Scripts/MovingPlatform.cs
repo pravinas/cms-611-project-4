@@ -8,7 +8,7 @@ public class MovingPlatform : MonoBehaviour {
     public float time;
 	// Use this for initialization
 	void Start () {
-        moveDistance = 4f;
+        moveDistance = 3.875f;
         delay = 120;
         time = 0f;
 	}
@@ -18,11 +18,17 @@ public class MovingPlatform : MonoBehaviour {
         if (delay == 0)
         {
             time += 1f;
-            transform.position = new Vector3(transform.position.x, ((Mathf.PingPong(time/60, 8) - 4)) * 1.5f, (Mathf.PingPong(time/60, moveDistance * 2f) - 4f) * 8f);
+            transform.position = new Vector3(transform.position.x, ((Mathf.PingPong(time/60, moveDistance) * (6f/3.875f)) - 8.5f), (Mathf.PingPong(time/60f, moveDistance) - (moveDistance/2f)) * 16f);
 
-            if ((transform.position.z == -32f || transform.position.z == 32f) && delay == 0)
+            if (delay == 0)
             {
-                delay = 120;
+                if (transform.position.z == -31f)
+                {
+                    delay = 120;
+                } else if (transform.position.z > 30.8f)
+                {
+                    delay = 60;
+                }
             }
         }
         else
