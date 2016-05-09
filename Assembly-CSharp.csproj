@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\StopWatch.cs" />
      <Compile Include="Assets\Scripts\UnloadOnClick.cs" />
      <Compile Include="Assets\Scripts\goalSpinner.cs" />
+     <Compile Include="Assets\Scripts\persistbgm.cs" />
      <None Include="Assets\_Scenes\ControlScenes\VelocityControlDocumentation.txt" />
      <None Include="Assets\_Scenes\UIMenuDocumentation.txt" />
      <None Include="Assets\_Scenes\ControlScenes\BoardTiltControlDocumentation.txt" />
