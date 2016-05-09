@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\LoadManager.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
      <Compile Include="Assets\Scripts\MusicLoader.cs" />
      <Compile Include="Assets\Scripts\OnLevelEnd.cs" />
      <Compile Include="Assets\Scripts\PauseManager.cs" />

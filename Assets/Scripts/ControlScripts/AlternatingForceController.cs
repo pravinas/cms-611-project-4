@@ -7,9 +7,12 @@ public class AlternatingForceController : MonoBehaviour
     private Rigidbody rb;
     private int counter = 0;
     private bool reversed = false;
-    // Use this for initialization
+	private Material colorMaterial;
+	// Use this for initialization
     void Start()
     {
+		colorMaterial = (Material)Resources.Load ("Material.002", typeof(Material));
+
         speed = 10f;
         rb = Statics.PlayerBall.GetComponent<Rigidbody>();
         Statics.levelDescription = "Split personalities";
@@ -29,8 +32,10 @@ public class AlternatingForceController : MonoBehaviour
 
         if (counter % 120 == 0) {
             if (reversed) {
+				colorMaterial.SetColor ("_EmissionColor", Statics.levelColors [Statics.currentLevel]);
                 reversed = false;
             } else {
+				colorMaterial.SetColor ("_EmissionColor", Statics.levelColors[5]);
                 reversed = true;
             }
         }
