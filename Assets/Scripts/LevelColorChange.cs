@@ -11,7 +11,7 @@ public class LevelColorChange : MonoBehaviour {
 
 		//colorMaterial.SetColor( "_Color",new Color(174.0f/255.0f,1.0f,1.0f));
 
-		if (Statics.currentLevel != null) {
+		if (Statics.currentLevel != null && Statics.currentLevel < Statics.levels.Length) {
 			colorMaterial.SetColor ("_EmissionColor", Statics.levelColors [Statics.currentLevel]);
 		}
 	
