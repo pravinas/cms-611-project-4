@@ -6,8 +6,13 @@ PhysicMaterial:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MazeMaterial
+<<<<<<< HEAD
   dynamicFriction: 10
   staticFriction: 1
+=======
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+>>>>>>> e8603079e7c7994cd1dda983487df301637a3748
   bounciness: 0
   frictionCombine: 0
   bounceCombine: 0
