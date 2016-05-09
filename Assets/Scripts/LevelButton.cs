@@ -28,11 +28,11 @@ public class LevelButton : MonoBehaviour {
 			Statics.currentLevel += 1;
 			if (Statics.latestUnlockedLevel < Statics.currentLevel)
 				Statics.latestUnlockedLevel = Statics.currentLevel;
-		}
-		else
+			Application.LoadLevelAdditive (Statics.levels [Statics.currentLevel]);
+			Application.LoadLevelAdditive ("UIHUD");
+		} else {
 			Statics.currentLevel = 0;
-		Application.LoadLevelAdditive (Statics.levels[Statics.currentLevel]);
-		Application.LoadLevelAdditive("UIHUD");
+		}
 	}
 
 	public void reloadLevel()
