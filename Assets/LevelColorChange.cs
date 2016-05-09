@@ -7,18 +7,14 @@ public class LevelColorChange : MonoBehaviour {
 	void Start () {
 
 		Material colorMaterial = (Material)Resources.Load ("Material.002", typeof(Material));
+		//colorMaterial.SetColor ("_EmissionColor",new Color(0.35f,0.59f,1.0f));
 
-		colorMaterial.SetColor( "_SpecColor",Color.red);
-		colorMaterial.SetColor ("_EmissionColor",Color.red);
-
-		colorMaterial.color = Color.red;
-		//Renderer renderers = GetComponent<Renderer> ();
-		//renderers.materials[3] = colorMaterial;
-		//renderers.materials [3].color = Color.red;
-		/*for (int i = 0; i < renderers.materials.Length; i++) {
-			renderers.materials [i].color = Color.red;
-		}*/
-
+		//colorMaterial.SetColor( "_Color",new Color(174.0f/255.0f,1.0f,1.0f));
+		Debug.Log("Setting Board Color");
+		if (Statics.currentLevel != null) {
+			Debug.Log (Statics.levelColors[0]);
+			colorMaterial.SetColor ("_EmissionColor", Statics.levelColors [Statics.currentLevel]);
+		}
 	
 	}
 	
