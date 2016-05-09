@@ -10,6 +10,7 @@ public class Statics : MonoBehaviour {
 	static public GameObject mainCamera;
 	// TODO: Move this to its own file
 	static public string[] levels;
+	static public Color[] levelColors;
 	static public int currentLevel;
 	static public int latestUnlockedLevel;
 
@@ -25,8 +26,10 @@ public class Statics : MonoBehaviour {
 		board = boardRef;
 		PlayerBall = PlayerBallRef;
 		mainCamera = cameraRef;
+		//currentLevel = 0;
 		// TODO: Update this to be accurate - Handle what happens when reach max levels
 		levels = new string[11];
+		levelColors = new Color[11];
 		levels[0] = "ForceControl";
 		levels[1] = "VelocityControl";
 		levels[2] = "MouseAttractControl";
@@ -38,5 +41,19 @@ public class Statics : MonoBehaviour {
         levels[8] = "UserInputControl";
         levels[9] = "BuddyRepelControl";
         levels[10] = "FPSControl1";
+		Debug.Log ("initializing colors");
+		levelColors [0] = new Color (0.35f, 0.59f, 1.0f);
+		levelColors [1] = Color.blue;
+		levelColors [2] = Color.green;
+		levelColors [3] = Color.magenta;
+		levelColors [4] = Color.red;
+		levelColors [5] = Color.yellow;
+		levelColors [6] = new Color (0.35f, 0.59f, 1.0f);
+		levelColors [7] = Color.blue;
+		levelColors [8] = Color.green;
+		levelColors [9] = Color.magenta;
+		levelColors [10] = Color.red;
+
+
     }
 }
