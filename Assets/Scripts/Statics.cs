@@ -26,7 +26,7 @@ public class Statics : MonoBehaviour {
 		PlayerBall = PlayerBallRef;
 		mainCamera = cameraRef;
 		// TODO: Update this to be accurate - Handle what happens when reach max levels
-		levels = new string[12];
+		levels = new string[11];
 		levels[0] = "ForceControl";
 		levels[1] = "VelocityControl";
 		levels[2] = "MouseAttractControl";
@@ -35,9 +35,8 @@ public class Statics : MonoBehaviour {
 		levels[5] = "ReversedForceControl";
 		levels[6] = "AlternatingForceControl";
         levels[7] = "DelayForceControl";
-        levels[8] = "BoardTiltControl";
-        levels[9] = "UserInputControl";
-        levels[10] = "BuddyRepelControl";
-        levels[11] = "FPSControl1";
+        levels[8] = "UserInputControl";
+        levels[9] = "BuddyRepelControl";
+        levels[10] = "FPSControl1";
     }
 }
