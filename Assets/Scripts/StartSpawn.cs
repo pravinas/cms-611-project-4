@@ -10,7 +10,17 @@ public class StartSpawn : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate () {
+        if (ball.transform.position.y <= -20)
+        {
+            ball.transform.position = this.transform.position;
+            if (Statics.levels[Statics.currentLevel].Equals("MouseTeleportControl"))
+            {
+                Statics.levelDescription = "... except there. No one goes outside the box.";
+            } else
+            {
+                Statics.levelDescription = "Well that was awkward...";
+            }
+        }
 	}
 }

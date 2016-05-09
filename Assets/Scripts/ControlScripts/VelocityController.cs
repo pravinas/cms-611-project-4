@@ -9,7 +9,8 @@ public class VelocityController : MonoBehaviour {
 	void Start () {
         speed = 10f;
 		rb = Statics.PlayerBall.GetComponent<Rigidbody> ();
-	}
+        Statics.levelDescription = "Brakes on";
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -22,6 +22,7 @@ public class BuddyRepelController : MonoBehaviour
         buddyRB = controlledBuddy.GetComponent<Rigidbody>();
         speed = 13f;
         effectRadius = 5f;
+        Statics.levelDescription = "You looked lonely, so I've brought you a friend";
     }
 
     // Update is called once per frame

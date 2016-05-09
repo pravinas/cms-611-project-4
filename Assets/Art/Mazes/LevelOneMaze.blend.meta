@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 62343ef353da1dc4c9959e3518e4dd5c
-timeCreated: 1462217521
-=======
-guid: 3b3d8477df2bd16408ee50a61f03a8e3
-timeCreated: 1462214676
->>>>>>> 6e69d01045089dcc532a6934596cd3a2ac8cee0c
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Plane
+    7400000: Default Take
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -34,7 +34,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

@@ -11,6 +11,7 @@ public class MouseRepelController : MonoBehaviour
     {
 		player = Statics.PlayerBall;
         rb = player.GetComponent<Rigidbody>();
+        Statics.levelDescription = "Rodent repellent";
     }
 
     // Update is called once per frame
