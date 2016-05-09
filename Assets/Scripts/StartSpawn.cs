@@ -14,6 +14,7 @@ public class StartSpawn : MonoBehaviour {
         if (ball.transform.position.y <= -20)
         {
             ball.transform.position = this.transform.position;
+            ball.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             if (Statics.levels[Statics.currentLevel].Equals("MouseTeleportControl"))
             {
                 Statics.levelDescription = "... except there. No one goes outside the box.";
