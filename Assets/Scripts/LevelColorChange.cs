@@ -10,9 +10,8 @@ public class LevelColorChange : MonoBehaviour {
 		//colorMaterial.SetColor ("_EmissionColor",new Color(0.35f,0.59f,1.0f));
 
 		//colorMaterial.SetColor( "_Color",new Color(174.0f/255.0f,1.0f,1.0f));
-		Debug.Log("Setting Board Color");
-		if (Statics.currentLevel != null) {
-			Debug.Log (Statics.levelColors[0]);
+
+		if (Statics.currentLevel != null && Statics.currentLevel < Statics.levels.Length) {
 			colorMaterial.SetColor ("_EmissionColor", Statics.levelColors [Statics.currentLevel]);
 		}
 	
