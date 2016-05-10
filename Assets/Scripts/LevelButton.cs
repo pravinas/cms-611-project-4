@@ -4,10 +4,9 @@ using System.Collections;
 public class LevelButton : MonoBehaviour {
 
 	public string level;
-	private string baseScene = "BaseScene";
 
 	public void loadLevel(){
-		Application.LoadLevel (baseScene);
+		Application.LoadLevel (Statics.sceneToPlay);
 		Application.LoadLevelAdditive (level);
         Application.LoadLevelAdditive("UIHUD");
         Time.timeScale = 1.0f;
@@ -15,14 +14,14 @@ public class LevelButton : MonoBehaviour {
 
     public void loadLevel(int i)
     {
-        Application.LoadLevel(baseScene);
+        Application.LoadLevel(Statics.sceneToPlay);
         Statics.currentLevel = i;
         Application.LoadLevelAdditive(Statics.levels[i]);
         Application.LoadLevelAdditive("UIHUD");
         Time.timeScale = 1.0f;
     }
     public void loadNextLevel(){
-		Application.LoadLevel (baseScene);
+		Application.LoadLevel (Statics.sceneToPlay);
         //TODO: If hit max level, handle properly
         Statics.currentLevel += 1;
         if (Statics.currentLevel < Statics.levels.Length) {
@@ -38,7 +37,7 @@ public class LevelButton : MonoBehaviour {
 	public void reloadLevel()
 	{
 		LoadManager.UnloadSelf ();
-		Application.LoadLevel (baseScene);
+		Application.LoadLevel (Statics.sceneToPlay);
 		Application.LoadLevelAdditive (Statics.levels[Statics.currentLevel]);
 		Application.LoadLevelAdditive("UIHUD");
         Time.timeScale = 1.0f;
@@ -46,7 +45,7 @@ public class LevelButton : MonoBehaviour {
 
 
 	public void loadBaseScene(){
-		Application.LoadLevel (baseScene);
+		Application.LoadLevel (Statics.sceneToPlay);
 	}
 
 	public void loadLevelAdditive(){
@@ -64,13 +63,13 @@ public class LevelButton : MonoBehaviour {
 
     public void exitToMenu()
     {
-        Application.LoadLevel(baseScene);
+        Application.LoadLevel(Statics.sceneToPlay);
         Application.LoadLevelAdditive(level);
     }
 
     public void loadLevelSelect()
     {
-        Application.LoadLevel(baseScene);
+        Application.LoadLevel(Statics.sceneToPlay);
         Application.LoadLevelAdditive(level);
     }
 

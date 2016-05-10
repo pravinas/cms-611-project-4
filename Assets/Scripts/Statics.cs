@@ -21,6 +21,8 @@ public class Statics : MonoBehaviour {
     static public string timeElapsed;
     static public string levelDescription;
 
+    static public string sceneToPlay = "BaseScene";
+
 	// Use this for initialization
 	void Start () {
 		board = boardRef;
@@ -41,7 +43,7 @@ public class Statics : MonoBehaviour {
         levels[8] = "UserInputControl";
         levels[9] = "BuddyRepelControl";
         levels[10] = "FPSControl1";
-
+		Debug.Log ("initializing colors");
 		levelColors [0] = new Color (0.35f, 0.59f, 1.0f);
 		levelColors [1] = Color.blue;
 		levelColors [2] = Color.green;
