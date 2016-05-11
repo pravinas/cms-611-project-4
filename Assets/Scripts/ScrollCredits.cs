@@ -16,7 +16,7 @@ public class ScrollCredits : MonoBehaviour {
 			Debug.Log ("scrolling!");
 			transform.Translate (new Vector3 (-speed * Time.deltaTime, 0));
 			Debug.Log (transform.position.x + " + " + gameObject.GetComponent<RectTransform> ().rect.width + " = " + (transform.position.x + gameObject.GetComponent<RectTransform> ().rect.width));
-			if (transform.position.x < -500) {
+			if (transform.position.x < -100) {
 				Debug.Log ("stop scrolling!");
 				isScroll = false;
 			}
