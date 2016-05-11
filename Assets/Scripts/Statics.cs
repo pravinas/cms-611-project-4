@@ -54,7 +54,8 @@ public class Statics : MonoBehaviour {
 		levelColors [7] = Color.blue;
 		levelColors [8] = Color.green;
 		levelColors [9] = Color.magenta;
-		levelColors [10] = Color.red;
+		levelColors [10] = new Color (0.3f, 0, 0.75f);
+		//levelColors [10] = Color.red;
 
 
     }
