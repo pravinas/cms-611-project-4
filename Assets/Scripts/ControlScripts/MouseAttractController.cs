@@ -6,6 +6,7 @@ public class MouseAttractController : MonoBehaviour
 {
     private Rigidbody rb;
     private GameObject player;
+	public Camera thisCamera;
 
     // Use this for initialization
     void Start()
@@ -26,7 +27,7 @@ public class MouseAttractController : MonoBehaviour
     void FixedUpdate() {
         if (Input.GetMouseButton(0)) {
             var mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            mousePos = thisCamera.ScreenToWorldPoint(mousePos);
 
             var moveBy = mousePos - player.transform.position;
             moveBy.y = 0;

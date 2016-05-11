@@ -4,6 +4,7 @@ using System.Collections;
 public class MouseTeleportController : MonoBehaviour {
 
     private GameObject player;
+	public Camera thisCamera;
 
     // Use this for initialization
     void Start () {
@@ -19,7 +20,7 @@ public class MouseTeleportController : MonoBehaviour {
     void FixedUpdate () {
         if (Input.GetMouseButtonDown(0)) {
             var mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            mousePos = thisCamera.ScreenToWorldPoint(mousePos);
             mousePos.y = player.transform.position.y;
 
             player.transform.position = mousePos;

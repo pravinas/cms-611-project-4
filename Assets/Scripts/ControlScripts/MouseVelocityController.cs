@@ -6,6 +6,7 @@ public class MouseVelocityController : MonoBehaviour
 {
     public float speed;
     private Rigidbody rb;
+	public Camera thisCamera;
 
     // Use this for initialization
     void Start()
