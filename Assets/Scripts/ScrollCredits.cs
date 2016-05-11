@@ -13,15 +13,26 @@ public class ScrollCredits : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (this.isScroll) {
+			Debug.Log ("scrolling!");
 			transform.Translate (new Vector3 (-speed * Time.deltaTime, 0));
-			if (transform.position.x < -7300) {
+			Debug.Log (transform.position.x + " + " + gameObject.GetComponent<RectTransform> ().rect.width + " = " + (transform.position.x + gameObject.GetComponent<RectTransform> ().rect.width));
+			if (transform.position.x < -500) {
+				Debug.Log ("stop scrolling!");
 				isScroll = false;
 			}
 		}
 	}
 
 	public void scrollLeft () {
-		transform.position.Set (7300, -575, 0);
-		this.isScroll = true;
+		Debug.Log ("activated scroll");
+		if (this.isScroll == false) {
+			this.isScroll = true;
+		} else {
+			this.isScroll = false;
+		}
+		Debug.Log ("x before: " + transform.position.x);
+		transform.position.Set (Screen.width, -575, 0);
+		Debug.Log ("x before: " + transform.position.y);
+		Debug.Log ("this.isScroll: " + this.isScroll);
 	}
 }
