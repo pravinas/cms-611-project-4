@@ -22,7 +22,9 @@ public class FPSControls1 : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
+		Debug.Log ("rb vel: " + rb.velocity + ", pos: " + rb.position);
+
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			player.transform.Rotate (Vector3.up, -turnSpeed * Time.deltaTime);
             rb.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
@@ -57,6 +59,9 @@ public class FPSControls1 : MonoBehaviour {
 		}
 		if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.UpArrow)) {
 			rb.velocity = new Vector3 (0, 0, 0);
+		}
+		if (!(Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.UpArrow))) {
+			rb.velocity = new Vector3 (0, rb.velocity.y, 0);
 		}
 	}
 
