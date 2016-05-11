@@ -18,11 +18,11 @@ public class FPSCamera : MonoBehaviour {
 
 	void Update() {
 	
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
 			transform.Rotate (Vector3.up, -turnSpeed * Time.deltaTime);
 		}
 
-		if (Input.GetKey (KeyCode.RightArrow)) {
+		if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
 			transform.Rotate (Vector3.up, turnSpeed * Time.deltaTime);
 		}
 	

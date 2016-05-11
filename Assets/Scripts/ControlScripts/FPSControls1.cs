@@ -24,17 +24,17 @@ public class FPSControls1 : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
 			player.transform.Rotate (Vector3.up, -turnSpeed * Time.deltaTime);
             rb.transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
         }
 
-		if (Input.GetKey (KeyCode.RightArrow)) {
+		if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
 			player.transform.Rotate (Vector3.up, turnSpeed * Time.deltaTime);
             rb.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
         }
 
-		if (Input.GetKey (KeyCode.UpArrow)) {
+		if (Input.GetKey (KeyCode.UpArrow) || Input.GetKey (KeyCode.W)) {
 			//rb.position = new Vector3(0, 0, rb.position.z + (transform.forward * speed * Time.deltaTime).z);
 			//rb.velocity = camera.transform.forward * speed;
 			//rb.transform.position += rb.transform.forward * speed * Time.deltaTime;
@@ -43,7 +43,7 @@ public class FPSControls1 : MonoBehaviour {
 			//rb.AddForce (-camera.transform.forward * speed);
 		}
 
-		if (Input.GetKey (KeyCode.DownArrow)) {
+		if (Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.S)) {
 			//rb.position = new Vector3(0, 0, rb.position.z + (transform.forward * speed * Time.deltaTime).z);
 			//rb.velocity = - camera.transform.forward * speed;
 			//rb.transform.position -= rb.transform.forward * speed * Time.deltaTime;
@@ -51,10 +51,10 @@ public class FPSControls1 : MonoBehaviour {
 
 			//rb.AddForce (camera.transform.forward * speed);
 		}
-		if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.UpArrow)) {
+		if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S)) {
 			rb.velocity = new Vector3 (0, 0, 0);
 		}
-		if (!(Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.UpArrow))) {
+		if (!(Input.GetKey (KeyCode.DownArrow) || Input.GetKey (KeyCode.UpArrow) || Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.S))) {
 			rb.velocity = new Vector3 (0, rb.velocity.y, 0);
 		}
 	}
